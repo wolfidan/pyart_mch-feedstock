@@ -1,6 +1,6 @@
 {% set name = "pyart_mch" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "6e16d4b947467b205f32aac9f8e309749d5f355babdae2a2467951df74e452ea" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "74f90eedc7e6a57f466e40759f35ffcedf10e90c3193d3d5321a20d23ebc95d7" %}
 
 package:
   name: {{ name|lower }}
@@ -11,11 +11,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k or win]
   script:
     - export RSL_PATH=$PREFIX  # [not win]
-    - "{{ PYTHON }} -m pip install . --no-deps -vvv"  # [not win]
+    - {{ PYTHON }} -m pip install . --no-deps -vvv    # [not win]
 
 requirements:
   build:
@@ -43,7 +43,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'MeteoSwiss version of Py-ART, the Python ARM Radar Toolkit'
+  summary: MeteoSwiss version of Py-ART, the Python ARM Radar Toolkit
   description: |
     This is the MeteoSwiss version of Py-ART. Py-ART, is an open source Python
     module containing a growing collection of weather radar algorithms
