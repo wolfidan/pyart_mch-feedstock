@@ -39,7 +39,7 @@ test:
     - pyart
 
 about:
-  home: http://meteoswiss-mdr.github.io/pyart/
+  home: https://github.com/MeteoSwiss/pyart
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -56,8 +56,8 @@ about:
     types of weather radars. The MeteoSwiss version contains enhanced
     and experimental functionality. MeteoSwiss regularly contributes back to
     the ARM-DOE Py-ART.
-  doc_url: https://meteoswiss-mdr.github.io/pyart/
-  dev_url: https://github.com/meteoswiss-mdr/pyart
+  doc_url: https://pyart-mch.readthedocs.io/en/stable/
+  dev_url: https://github.com/MeteoSwiss/pyart
 
 extra:
   recipe-maintainers:
