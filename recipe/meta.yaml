@@ -7,15 +7,15 @@ package:
   version: {{ version }}
 
 source:
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
-  skip: true  # [py2k or win]
   script:
-    - export RSL_PATH=$PREFIX  # [not win]
-    - {{ PYTHON }} -m pip install . --no-deps -vvv    # [not win]
+    - export RSL_PATH=$PREFIX    # [not win]
+    - {{ PYTHON }} -m pip install . --no-deps -vvv
 
 requirements:
   build:
@@ -42,6 +42,7 @@ requirements:
     - s3fs
     - cftime
     - trmm_rsl      # [not win]
+
 
 test:
   imports:
