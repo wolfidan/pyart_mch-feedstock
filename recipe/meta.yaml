@@ -23,9 +23,11 @@ requirements:
   host:
     - python
     - pip
-    - Cython
-    - numpy
-    - trmm_rsl  # [not win]
+    - setuptools >=30.3.0
+    - setuptools_scm
+    - numpy >1.18.0
+    - cython
+    - trmm_rsl      # [not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
@@ -33,7 +35,13 @@ requirements:
     - matplotlib-base
     - netcdf4
     - xarray
-    - trmm_rsl  # [not win]
+    - pooch
+    - cython
+    - versioneer
+    - fsspec
+    - s3fs
+    - cftime
+    - trmm_rsl      # [not win]
 
 test:
   imports:
