@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - pip
+    - Cython
     - numpy
     - trmm_rsl  # [not win]
   run:
