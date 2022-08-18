@@ -20,6 +20,8 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - trmm_rsl
+    - cython
   host:
     - python
     - pip
