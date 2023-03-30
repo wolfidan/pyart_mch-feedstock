@@ -1,11 +1,11 @@
-About pyart_mch
-===============
+About pyart_mch-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyart_mch-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/MeteoSwiss/pyart
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyart_mch-feedstock/blob/main/LICENSE.txt)
 
 Summary: MeteoSwiss version of Py-ART, the Python ARM Radar Toolkit
 
