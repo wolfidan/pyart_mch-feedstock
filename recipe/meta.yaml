@@ -43,8 +43,6 @@ requirements:
     - fsspec
     - s3fs
     - cftime
-    - trmm_rsl      # [not win]
-
 
 test:
   imports:
