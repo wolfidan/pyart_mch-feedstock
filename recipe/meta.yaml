@@ -29,7 +29,6 @@ requirements:
     - setuptools_scm
     - numpy >1.18.0
     - cython >=0.24.0
-    - trmm_rsl      # [not win]
   run:
     - python
     - {{ pin_compatible('numpy') }}
