@@ -1,6 +1,6 @@
 {% set name = "pyart_mch" %}
-{% set version = "1.8.9" %}
-{% set sha256 = "ca4ed26e3ed62a41f946f76ddd417fa4ecd1de2c1d44348188145ae7d179b79b" %}
+{% set version = "1.9.2" %}
+{% set sha256 = "36eb1993ea378176b64149785b4311f4a3bc68026c85d364544f1b93535051d0" %}
 
 package:
   name: {{ name|lower }}
@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cython
   host:
     - python
