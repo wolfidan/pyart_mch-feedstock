@@ -1,6 +1,6 @@
 {% set name = "pyart_mch" %}
-{% set version = "1.9.2" %}
-{% set sha256 = "36eb1993ea378176b64149785b4311f4a3bc68026c85d364544f1b93535051d0" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "3a9deab23d56f9d898060ebf20012909dc92ec81dd1a7fed055ce3cc0fb1bd45" %}
 
 package:
   name: {{ name|lower }}
@@ -22,26 +22,30 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
     - cython
-  host:
+host:
     - python
     - pip
-    - setuptools >=30.3.0
+    - numpy >=1.18
+    - cython >=0.24.0,<3.0.10
     - setuptools_scm
-    - numpy >1.18.0
-    - cython >=0.24.0
   run:
     - python
-    - {{ pin_compatible('numpy') }}
+    - setuptools
+    - setuptools_scm
+    - numpy >=1.18
     - scipy
     - matplotlib-base
     - netcdf4
     - xarray
     - pooch
-    - cython
     - versioneer
     - fsspec
     - s3fs
     - cftime
+    - xradar >=0.5.0
+    - open-radar-data
+    - pandas
+    - mda-xdrlib
 
 test:
   imports:
